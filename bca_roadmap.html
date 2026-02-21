@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCA Roadmap</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ADD8E6;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        #roadmap-details {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #roadmap-details h2 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        #roadmap-details p {
+            line-height: 1.5;
+        }
+
+        .button {
+            background-color: #ddd;
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .button:hover {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+<h1>BCA Roadmap</h1>
+<div id="roadmap-details"></div>
+
+</body>
+<!--<script>
+    // Add event listener for the button
+    document.getElementById('fetch-bca-button').addEventListener('click', function() {
+        // Send an HTTP GET request to fetch BCA roadmap data
+        fetch('/roadmap/BCA')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                // Process the received data
+                console.log('BCA roadmap data:', data);
+                // Update the UI or perform other actions with the data
+            })
+            .catch(error => {
+                console.error('Error fetching BCA roadmap data:', error);
+                // Handle errors gracefully, e.g., show an error message to the user
+            });
+    });
+
+    
+</script>-->
+</html>

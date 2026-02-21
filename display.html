@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://i.pinimg.com/originals/95/26/bf/9526bfa7e708ff6cf29375c6f39152ad.jpg'); /* Replace 'img1.webx' with the name of your image file */
+    background-size: cover; /* Cover the entire background */
+   /* Center the background image */
+    background-position:center;
+    background-repeat: no-repeat;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+background-color: #ADD8E6;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        #course-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        .course {
+            background-image: url('https://i.pinimg.com/564x/5a/8b/75/5a8b7531dac252f3428f9036f0bfbf21.jpg'); /* Replace 'img1.webx' with the name of your image file */
+    background-size: cover; /* Cover the entire background */
+   /* Center the background image */
+    background-position: right center;
+    background-repeat: no-repeat;
+            margin: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            text-align: center;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .course img {
+            width: 60%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            /* filter: sepia(1) hue-rotate(190deg) saturate(2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+        }
+
+        .course h2 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .course p {
+            line-height: 1.5;
+        }
+
+        .course a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            background-color: #ddd;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        header {
+            background-image: url('https://i.pinimg.com/564x/5a/f0/b7/5af0b7c6f86911beab14612725df3bb0.jpg'); /* Replace 'img1.webx' with the name of your image file */
+    background-size: cover; /* Cover the entire background */
+   /* Center the background image */
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: 10%;
+            background-color: #f0f0f0; /* Light gray background */
+            padding: 5px;
+            margin-top: 20px;
+        }
+
+        .button {
+             background-color: #ddd;
+           color: #333;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .course a:hover {
+            background-color: #ccc;
+        }
+    </style>
+
+
+
+</head>
+<body>
+<header>
+    <h1>ROADMAP</h1>
+</header>
+<section id="course-list">
+    <article class="course">
+        <form action="bcasave" method="post">
+        <img src="https://i.pinimg.com/564x/ab/6c/9d/ab6c9d1990ab2dc499ebe9190546ff7d.jpg" alt="Course 1" style="filter: sepia(1) hue-rotate(190deg) saturate(2);">
+        <h2>BCA</h2>
+        <p>
+            BCA is a bachelor's degree in computer applications, emphasizing software development and computer science topics like programming, databases, and web development. It prepares students for careers in the IT industry by combining theory and practical skills.
+        </p>
+        <button class="button"><a style="text-decoration:none" href="http://localhost:3000/Courses">View Road Map</a></button>
+            <!-- <p>Apollo Event Reminders</p> --> 
+<!-- <button type="submit" class="button" id="fetch-bca-button" onclick="redirectToBCARoadmap()" >View RoadMap</button> -->
+
+</form>
+<!--<script>
+    function redirectToBCARoadmap() {
+       // window.location.href = "bca_roadmap.html";
+        window.location.href = "/roadmap/BCA";
+    }
+    </script>-->
+
+    </article>
+    
+    <article class="course">
+        <img src="https://i.pinimg.com/564x/3f/06/69/3f0669b92c77db64378d06d2edb4d6ff.jpg" alt="Course 2" style="filter: sepia(1) hue-rotate(190deg) saturate(2);">
+        <h2>BBA</h2>
+        <p>BBA is a bachelor's degree in business administration, offering a broad understanding of business principles like finance, marketing, and management. It prepares students for entry-level business roles or further studies in specialized areas of business.
+
+        </p>
+         <button class="button"><a style="text-decoration:none" href="http://localhost:3000/Courses1">View Road Map</a></button>
+    </article>
+    
+    <article class="course">
+        <img src="https://i.pinimg.com/564x/47/75/51/47755119c2cdc5eaf5145121498359a4.jpg" alt="Course 3">
+        <h2>B.COM</h2>
+        <p>
+            BCom stands for Bachelor of Commerce. It's an undergraduate degree program that focuses on commerce, accounting, finance, economics, and business studies. BCom provides students with a comprehensive understanding of various aspects of business and commerce,</p>
+        </p>
+        <button class="button"><a style="text-decoration:none" href="http://localhost:3000/Courses2">View Road Map</a></button>
+    </article>
+
+
+    <article class="course">
+        <img src="https://i.pinimg.com/564x/b6/7b/f3/b67bf33c1ad767fd1f05fb3ee37233c3.jpg" alt="Course 4">
+        <h2>LLB</h2>
+        <p>LLB is a bachelor's degree in law, focusing on legal principles and systems like constitutional law, criminal law, and contracts. It equips students with critical thinking and analytical skills for careers in law or related fields.
+        </p>
+    </p>
+    <button class="button"><a style="text-decoration:none" href="http://localhost:3000/Courses3">View Road Map</a></button>
+    </article>
+
+    <article class="course">
+        <img src="https://i.pinimg.com/564x/56/d8/8a/56d88a9c424092eee8c0668742875a29.jpg" alt="Course 5" >
+        <h2>ENGINEERING</h2>
+        <p>Engineering involves applying scientific and technical knowledge to design, develop, and maintain structures, machines, systems, and materials. It spans various disciplines and industries, requiring problem-solving skills and innovation to address real-world challenges.</p>
+        </p>
+        <button class="button"><a style="text-decoration:none" href="http://localhost:3000/Courses4">View Road Map</a></button>
+    </article>
+
+    <article class="course">
+        <img src="https://i.pinimg.com/564x/9b/e9/f3/9be9f3bebc0e139e56cab23785d38bab.jpg" alt="Course 6">
+        <h2>MEDICINE</h2>
+        <p>Medical education trains individuals to become healthcare professionals, like doctors. It involves academic study, clinical training, and specialization, preparing them to diagnose, treat, and prevent illnesses and injuries.
+        </p>
+        <button class="button"><a style="text-decoration:none" href="http://localhost:3000/Courses5">View Road Map</a></button>
+    </article> 
+
+</section>
+<script>
+function loadcourse(url) {
+    window.location.href = url;
+}
+</script>
+
+</body>
+</html>
+
+<!--<script>
+    // Fetch BCA roadmap data from the server
+    fetch('/roadmap/BCA')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            // Display BCA roadmap data on the page
+            const roadmapDetails = document.getElementById('roadmap-details');
+            roadmapDetails.innerHTML = `
+                <h2>${data.program}</h2>
+                <p><strong>Description:</strong> ${data.description}</p>
+               Add more roadmap details here 
+            `;
+        })
+        .catch(error => {
+            console.error('Error fetching BCA roadmap data:', error);
+            const roadmapDetails = document.getElementById('roadmap-details');
+            roadmapDetails.innerHTML = '<p>Error fetching BCA roadmap data. Please try again later.</p>';
+        });
+</script>-->

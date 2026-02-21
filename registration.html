@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ADD8E6;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 50px;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url('https://c0.wallpaperflare.com/preview/663/817/172/equipment-illustration-letter-message.jpg') ; /* Replace 'img1.webx' with the name of your image file */
+    background-size: cover;
+     /* Cover the entire background */
+    background-position: left; /* Center the background image */
+    background-repeat: no-repeat;
+        }
+
+        .container {
+
+            background-image: url('https://i.pinimg.com/236x/39/ec/9d/39ec9dfd7fb2914d18b3820b4393f325.jpg');
+            background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+            background-color: #f0f0f0;
+            padding: 100px;
+            border-radius: 50px;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .checkbox {
+            margin-bottom: 10px;
+        }
+
+        .checkbox label {
+            display: inline-block;
+            position: relative;
+            margin-right: 5px;
+        }
+
+        .checkbox input {
+            display: none;
+        }
+
+        .checkbox label:before {
+            content: "";
+            display: block;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .checkbox input:checked + label:before {
+            background-color: #ADD8E6;
+        }
+
+        .button {
+             background-color: #ddd;
+           color: #333;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .login-link {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <form action="registrationsave" method="post">
+    <div class="container">
+        <h1 class="title">REGISTRATION</h1>
+            <div class="form-group">
+                <label for="name" class="label">Enter your name</label>
+                <input type="text" id="name" name="txtname" class="input" placeholder="sachin">
+            </div>
+            <div class="form-group">
+                <label for="email" class="label">Enter your email</label>
+                <input type="email" id="email" name="txtemail" class="input" placeholder="sachin@example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="pwd" class="label">Enter your password</label>
+                <input type="password" id="pwd" name="txtpwd"class="input" placeholder="****">
+            </div>
+
+            <div class="form-group">
+                <label for="age" class="label">Enter your age</label>
+                <input type="text" id="age" name="txtage"class="input" placeholder="19">
+            </div>
+
+            <div class="form-group">
+                <label for="ug" class="label">Enter your Level Of Study</label>
+                <input type="text" id="ug" name="txtug"class="input" placeholder="pu or degree">
+            </div>
+            
+            <button type="submit" class="button">Register Now</button>
+        
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ADD8E6;
+            background-image: url('https://i.pinimg.com/564x/91/7d/85/917d85bdbecb3430a3abc34a441e404f.jpg'); /* Replace 'img1.webx' with the name of your image file */
+    background-size: cover; 
+    background-position: right center;
+    background-repeat: no-repeat;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .form-section {
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .label {
+            font-weight: bold;
+        }
+
+        .input {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .button {
+            background-color: #ddd;
+            color: #333;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 100px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+<form action="addsave" method="post">
+<header>
+    <h1>Add a Roadmap</h1>
+</header>
+<div class="container">
+    <section class="form-section">
+        <h2>Program Information</h2>
+        <div class="form-group">
+            <label for="id" class="label">Program ID</label>
+            <input type="text" id="id" name="id" class="input" placeholder="please give id from 007 and continue">
+        </div>
+        <div class="form-group">
+            <label for="program" class="label">Program Name</label>
+            <input type="text" id="program" name="program" class="input" placeholder="Engineering">
+        </div>
+        <div class="form-group">
+            <label for="description" class="label">Description</label>
+            <textarea id="description" name="description" class="input" rows="4" placeholder="Enter description"></textarea>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <h2>Goals</h2>
+        <div class="form-group">
+            <label for="short-term-goals" class="label">Short-Term Goals</label>
+            <textarea id="short-term-goals" name="shorttermgoals" class="input" rows="4" placeholder="Enter short-term goals"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="long-term-goals" class="label">Long-Term Goals</label>
+            <textarea id="long-term-goals" name="longtermgoals" class="input" rows="4" placeholder="Enter long-term goals"></textarea>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <h2>Career Exploration</h2>
+        <div class="form-group">
+            <label for="career-exploration" class="label">Career Exploration</label>
+            <textarea id="career-exploration" name="careerexploration" class="input" rows="4" placeholder="Enter career exploration"></textarea>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <h2>Competitive Exam</h2>
+        <div class="form-group">
+            <label for="competitive-exam" class="label">List out Competitive Exam</label>
+            <textarea id="competitive-exam" name="competitiveexam" class="input" rows="4" placeholder="Enter competitive exam details"></textarea>
+        </div>
+    </section>
+
+    <div class="button-container">
+        <button class="button">Submit</button>
+    </div>
+</div>
+</form>
+</body>
+</html>

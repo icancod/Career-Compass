@@ -1,0 +1,22 @@
+{
+  "name": "beyond-the-degree",
+  "version": "1.0.0",
+  "description": "Career Compass - Navigating Your Journey Beyond Graduation",
+  "main": "router1.js",
+  "scripts": {
+    "start": "node router1.js",
+    "dev": "nodemon router1.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "formidable": "^3.5.1",
+    "handlebars": "^4.7.8",
+    "method-override": "^3.0.0",
+    "mongod": "^2.0.0",
+    "mongodb": "^6.6.1",
+    "mongoose": "^8.3.4",
+    "mv": "^2.1.1",
+    "nodemon": "^3.1.0"
+  }
+}
